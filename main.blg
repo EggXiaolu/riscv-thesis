@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: bib/gbt7714-numerical.bst
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Database file #1: bib/ref.bib
+Warning--empty author in JCDI202106005
+Warning--empty author and editor in 10.1145/3431920
+You've used 11 entries,
+            4281 wiz_defined-function locations,
+            965 strings with 8790 characters,
+and the built_in function-call counts, 55644 in all, are:
+= -- 1585
+> -- 5984
+< -- 7467
++ -- 2362
+- -- 925
+* -- 444
+:= -- 8100
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 17
+chr.to.int$ -- 2107
+cite$ -- 15
+duplicate$ -- 201
+empty$ -- 582
+format.name$ -- 192
+if$ -- 14112
+int.to.chr$ -- 1
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 65
+num.names$ -- 27
+pop$ -- 1839
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 5716
+stack$ -- 0
+substring$ -- 3221
+swap$ -- 30
+text.length$ -- 124
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 141
+warning$ -- 2
+while$ -- 155
+width$ -- 0
+write$ -- 162
+(There were 2 warnings)

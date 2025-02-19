@@ -1,0 +1,65 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}\else
+  \providecommand\doi[1]{\href{https://doi.org/#1}{\nolinkurl{#1}}}\fi
+
+\bibitem[Cocke et~al.(1990)Cocke and Markstein]{cocke1990evolution}
+Cocke~J, Markstein~V.
+\newblock The evolution of risc technology at ibm\allowbreak[J].
+\newblock IBM Journal of research and development, 1990, 34\penalty0 (1):\penalty0 4-11.
+
+\bibitem[Waterman et~al.(2011)Waterman, Lee, Patterson, and Asanovic]{waterman2011risc}
+Waterman~A, Lee~Y, Patterson~D~A, et~al.
+\newblock The risc-v instruction set manual, volume i: Base user-level isa\allowbreak[J].
+\newblock EECS Department, UC Berkeley, Tech. Rep. UCB/EECS-2011-62, 2011, 116:\penalty0 1-32.
+
+\bibitem[Asanovi{\'c} et~al.(2014)Asanovi{\'c} and Patterson]{asanovic2014instruction}
+Asanovi{\'c}~K, Patterson~D~A.
+\newblock Instruction sets should be free: The case for risc-v\allowbreak[J].
+\newblock EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-146, 2014.
+
+\bibitem[Marena(2019)]{marena2019risc}
+Marena~T.
+\newblock Risc-v: high performance embedded swerv™ core microarchitecture, performance and chips alliance\allowbreak[J].
+\newblock Western Digital Corporation, 2019.
+
+\bibitem[JCD(2021)]{JCDI202106005}
+平头哥发布全新RISC-V处理器\allowbreak[J].
+\newblock 中国集成电路, 2021, 30\penalty0 (06):\penalty0 21.
+
+\bibitem[王凯帆\ 等(2023)王凯帆, 徐易难, 余子濠, 唐丹, 陈国凯, 陈熙, 勾凌睿, 胡轩, 金越, 李乾若, 李昕, 蔺嘉炜, 刘彤, 刘志刚, 王华强, 王诲喆, 张传奇, 张发旺, 张林隽, 张紫飞, 张梓悦, 赵阳洋, 周耀阳, 邹江瑞, 蔡晔, 郇丹丹, 李祖松, 赵继业, 何伟, 孙凝晖, and 包云岗]{JFYZ202303014}
+王凯帆, 徐易难, 余子濠, 等.
+\newblock 香山开源高性能RISC-V处理器设计与实现\allowbreak[J].
+\newblock 计算机研究与发展, 2023, 60\penalty0 (03):\penalty0 476-493.
+
+\bibitem[Daki\u0107 et~al.(2024)Daki\u0107, Mr\u0161i\u0107, Kuni\u0107, and \u0110ambi\u0107]{electronics13173494}
+Daki\u0107~V, Mr\u0161i\u0107~L, Kuni\u0107~Z, et~al.
+\newblock Evaluating arm and risc-v architectures for high-performance computing with docker and kubernetes\allowbreak[J/OL].
+\newblock Electronics, 2024, 13\penalty0 (17).
+\newblock \url{https://www.mdpi.com/2079-9292/13/17/3494}.
+\newblock DOI: \doi{10.3390/electronics13173494}.
+
+\bibitem[10.(2021)]{10.1145/3431920}
+Fpga '21: The 2021 acm/sigda international symposium on field-programmable gate arrays\allowbreak[C].
+\newblock New York, NY, USA: Association for Computing Machinery, 2021.
+
+\bibitem[钟戴元\ 等(2024)钟戴元, 曾庆立, 周佳凯, 薛浪, and 唐瑞东]{SDDZ202411008}
+钟戴元, 曾庆立, 周佳凯, 等.
+\newblock 基于RISC-V处理器的软硬件联合验证平台设计与实现\allowbreak[J].
+\newblock 信息技术与信息化, 2024\penalty0 (11):\penalty0 23-26.
+
+\bibitem[郝振和\ 等(2020)郝振和, 焦继业, and 李雨倩]{JSGG202020007}
+郝振和, 焦继业, 李雨倩.
+\newblock 基于AHB总线的RISC-V微处理器设计与实现\allowbreak[J].
+\newblock 计算机工程与应用, 2020, 56\penalty0 (20):\penalty0 52-58.
+
+\bibitem[潘树朋\ 等(2021)潘树朋, 刘有耀, 焦继业, and 李昭]{JSGG202103009}
+潘树朋, 刘有耀, 焦继业, 等.
+\newblock 基于RISC-V浮点指令集FPU的研究与设计\allowbreak[J].
+\newblock 计算机工程与应用, 2021, 57\penalty0 (03):\penalty0 80-86.
+
+\end{thebibliography}

@@ -1,0 +1,43 @@
+%-------------------------------------------------
+% FileName: abstract-en.tex
+% Author: Safin (zhaoqid@zsc.edu.cn)
+% Version: 0.1
+% Date: 2020-05-12
+% Description: 英文摘要
+% Others: 
+% History: origin
+%------------------------------------------------- 
+
+% 以下不用改动-------------------------------------
+% 断页
+\clearpage
+% 加入书签, bm@ABSTRACTNAME要唯一
+\currentpdfbookmark{\defABSTRACTNAME}{bm@ABSTRACTNAME}
+% \chapter*{} 表示不编号，不生成目录
+% \markboth{}{} 用于页眉
+% 此处以英文题目作为章题目 2024版废止
+% \chapter*{\defTITLE \markboth{\defABSTRACTNAME}{}} 
+% 以Abstract为章题目
+\chapter*{\defABSTRACTNAME\markboth{\defABSTRACTNAME}{}}
+
+% 修改摘要和关键词---------------------------------
+% 英文摘要
+% 英文摘要与中文摘要的内容应一致。
+\ABSTRACT{
+	This paper presents a processor simulation design method based on the RISC-V architecture, focusing on the efficient implementation of the RV32E instruction set. Starting from the internal structure of the processor core, the study systematically introduces the design details of the fetch unit, decode unit, execution unit, memory access unit, and write-back unit. By properly connecting these key units, a simple single-cycle processor architecture is constructed. On this basis, handshake signals are introduced to optimize timing logic, further upgrading the single-cycle processor to a multi-cycle processor, which significantly enhances the processor's timing flexibility and performance.
+
+	Furthermore, this paper employs ARM's AXI4 bus protocol to achieve efficient connections between the processor and external devices, successfully integrating it into a System on Chip (SoC). To further optimize the processor's performance, pipeline and high-speed cache technologies are introduced, which significantly improve the processor's parallel processing capabilities and memory access speed, enabling it to better meet the needs of modern computing tasks.
+
+	In the verification section, this paper thoroughly explores the simulation process of the processor. By using the open-source tool Verilator to compile RTL code into C++ programs and run simulations, the efficiency and flexibility of the simulation are ensured. Additionally, an efficient differential testing method is employed, comparing the states with those of a behavioral simulator to achieve high efficiency and accuracy in testing, thereby ensuring the efficiency and reliability of the design.
+	In summary, this study provides a systematic and efficient method for the design and verification of RISC-V architecture processors, which holds significant theoretical and practical value and lays a solid foundation for subsequent processor design and optimization work.
+}
+
+% 英文关键词
+% 每一个英文关键词都必须与中文关键词一一对应。
+\KEYWORDS{RISC-V;  Architecture; Performance Optimization; Design Approach}
+
+
+
+
+
+
