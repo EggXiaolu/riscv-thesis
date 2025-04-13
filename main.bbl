@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\else
@@ -6,6 +6,11 @@
 \expandafter\ifx\csname href\endcsname\relax
   \DeclareUrlCommand\doi{\urlstyle{rm}}\else
   \providecommand\doi[1]{\href{https://doi.org/#1}{\nolinkurl{#1}}}\fi
+
+\bibitem[Faggin et~al.(1996)Faggin, Hoff, Mazor, and Shima]{faggin1996history}
+Faggin~F, Hoff~M~E, Mazor~S, et~al.
+\newblock The history of the 4004\allowbreak[J].
+\newblock Ieee Micro, 1996, 16\penalty0 (6):\penalty0 10-20.
 
 \bibitem[Cocke et~al.(1990)Cocke and Markstein]{cocke1990evolution}
 Cocke~J, Markstein~V.
@@ -21,6 +26,11 @@ Waterman~A, Lee~Y, Patterson~D~A, et~al.
 Asanovi{\'c}~K, Patterson~D~A.
 \newblock Instruction sets should be free: The case for risc-v\allowbreak[J].
 \newblock EECS Department, University of California, Berkeley, Tech. Rep. UCB/EECS-2014-146, 2014.
+
+\bibitem[黄鑫(2021)]{JJRB202112060060}
+黄鑫.
+\newblock “十四五”软件业开源生态加快构建\allowbreak[R].
+\newblock 经济日报, 2021.
 
 \bibitem[Marena(2019)]{marena2019risc}
 Marena~T.

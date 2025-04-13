@@ -14,78 +14,130 @@
 
 \section{RISC-V处理器指令集}
 
-RISC-V 基础指令集（Base ISA）作为 RISC-V 架构的核心，为处理器提供了基本的指令集框架。如图\ref{fig:riscv_instruction_formats}所示，RV32I 包含六种基本指令类型，分别是 R 型、I 型、S 型、B 型、U 型和 J 型。
+\begin{enumerate}[label={(\arabic*)},itemsep=0pt, parsep=0pt]
+	\item 指令集格式
 
-与 X86 架构的指令集相比，RISC-V 的指令集格式更为简洁且高效。RISC-V 仅定义了六种指令格式，且每条指令长度固定为 32 位或 64 位，这极大地降低了指令译码时的复杂度和开销。相比之下，X86 架构由于其CISC的特性，指令长度不定，每次取指需按照最大指令字长读取，并在译码阶段进行分割，这无疑增加了指令处理的复杂度。此外，RV32I 的基础指令数量仅为 47 条，即使加上乘除法扩展（RV32M），指令总数也不超过 60 条。而 X86 架构在发布初期有 80 条指令，到 2015 年，其指令数量已增长至 1338 条，增加了 16 倍。
+	      RISC-V 基础指令集（Base ISA）作为 RISC-V 架构的核心，为处理器提供了基本的指令集框架。如表\ref{tab:riscv_instruction_formats}和图\ref{fig:riscv_instruction_formats}所示，RV32I 包含了六种基本指令类型：
+	      \begin{enumerate}[]
+		      \item \textbf{R型}：两个操作数来自寄存器，用于寄存器间操作；
+		      \item \textbf{I型}：两个操作数来自立即数和寄存器，用于实现立即数和取数操作；
+		      \item \textbf{S型}：两个操作数来自寄存器，一个操作数来自立即数，用于实现访存操作；
+		      \item \textbf{B型}：两个操作数来自寄存器，一个操作数来自立即数，用于实现条件分支操作；
+		      \item \textbf{U型}：一个操作数来自立即数，用于实现长立即数操作；
+		      \item \textbf{J型}：一个操作数来自立即数，用于实现无条件跳转操作。
+	      \end{enumerate}
 
-RISC-V 指令集的另一个显著特点是其模块化设计。RV32I 作为基础 ISA，足以支持基本的软件运行，其稳定性为开发者提供了可靠的指令集基础。模块化设计允许开发者根据具体需求选择特定的扩展，例如：RV32M 支持乘除法运算，RV32F 支持单精度浮点数运算，RV32D 支持双精度浮点数运算，RV32A 支持原子操作等。这种灵活的扩展机制使得 RISC-V 能够适应从嵌入式系统到高性能计算的多样化应用场景。
+	      从指令格式就可以看出RISC-V指令集最大的优点——精简。首先，指令的长度都为32位，同一种类型的指令格式单一，大幅度减小了译码器的开销以及实现难度。其次，R型指令提供了三个寄存器，这对于需要三个操作数的指令不需要额外的访存，避免了访存带来的开销。然后，寄存器的编码都在指令的固定位置（rs1和rs2），在译码之前就可以先读取寄存器的值读。最后，立即数的符号位被编码至指令的最高位，所以，立即数的符号扩展操作可以与译码操作并行处理。
 
-%绘制RV32I指令结构
-\begin{figure}[htbp]
-	\centering % 使图像居中
-	\begin{adjustbox}{width=0.9\textwidth} % 设置图像宽度为页面宽度的 0.9 倍
-		% 这里是你的 bytefield 表格代码
-		\begin{bytefield}[bitwidth=1.2em, boxformatting={\centering}, endianness=big]{32}
-			% R-type (Register-Register)
-			\bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\ % 显示边界条件的坐标
-			\bitbox{7}{funct7} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{R-type (Register-Register)} \\
+	      %绘制RV32I指令结构
+	      \begin{figure}[htbp]
+		      \centering % 使图像居中
+		      \begin{adjustbox}{width=0.9\textwidth} % 设置图像宽度为页面宽度的 0.9 倍
+			      % 这里是你的 bytefield 表格代码
+			      \begin{bytefield}[bitwidth=1.2em, boxformatting={\centering}, endianness=big]{32}
+				      % R-type (Register-Register)
+				      \bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\ % 显示边界条件的坐标
+				      \bitbox{7}{funct7} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{R-type (Register-Register)} \\
 
-			% I-type (Immediate)
-			\bitheader{31,20,19,15,14,12,11,7,6,0} \\
-			\bitbox{12}{imm[11:0]} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{I-type (Immediate)} \\
+				      % I-type (Immediate)
+				      \bitheader{31,20,19,15,14,12,11,7,6,0} \\
+				      \bitbox{12}{imm[11:0]} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{I-type (Immediate)} \\
 
-			% S-type (Store)
-			\bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\
-			\bitbox{7}{imm[11:5]} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{imm[4:0]} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{S-type (Store)} \\
+				      % S-type (Store)
+				      \bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\
+				      \bitbox{7}{imm[11:5]} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{imm[4:0]} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{S-type (Store)} \\
 
-			% B-type (Branch)
-			\bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\
-			\bitbox{7}{imm[12|10:5]} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{imm[4:1|11]} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{B-type (Branch)} \\
+				      % B-type (Branch)
+				      \bitheader{31,25,24,20,19,15,14,12,11,7,6,0} \\
+				      \bitbox{7}{imm[12|10:5]} & \bitbox{5}{rs2} & \bitbox{5}{rs1} & \bitbox{3}{funct3} & \bitbox{5}{imm[4:1|11]} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{B-type (Branch)} \\
 
-			% U-type (Upper Immediate)
-			\bitheader{31,12,11,7,6,0} \\
-			\bitbox{20}{imm[31:12]} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{U-type (Upper Immediate)} \\
+				      % U-type (Upper Immediate)
+				      \bitheader{31,12,11,7,6,0} \\
+				      \bitbox{20}{imm[31:12]} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{U-type (Upper Immediate)} \\
 
-			% J-type (Jump)
-			\bitheader{31,12,11,7,6,0} \\
-			\bitbox{20}{imm[20|10:1|11|19:12]} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
-			\wordbox[]{1}{J-type (Jump)} \\
-		\end{bytefield}
-	\end{adjustbox}
-	\caption{RV32I 指令集格式} % 添加题注
-	\label{fig:riscv_instruction_formats} % 添加标签以便引用
-\end{figure}
+				      % J-type (Jump)
+				      \bitheader{31,12,11,7,6,0} \\
+				      \bitbox{20}{imm[20|10:1|11|19:12]} & \bitbox{5}{rd} & \bitbox{7}{opcode} \\
+				      \wordbox[]{1}{J-type (Jump)} \\
+			      \end{bytefield}
+		      \end{adjustbox}
+		      \caption{RV32I 指令集格式} % 添加题注
+		      \label{fig:riscv_instruction_formats}
+	      \end{figure}
 
-表\ref{tab:riscv_instruction_formats}介绍了RV32I指令类型的功能和示例：R型用于寄存器间操作、I型用于立即数和取数操作、S型用于存数操作、B型用于条件分支跳转操作、U型用于高位立即数操作、J型用于无条件跳转。
+	      %绘制指令类型介绍
+	      \begin{table}[htbp]
+		      \centering
+		      \caption{RISC-V 指令格式介绍}
+		      \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}X}
+			      \toprule
+			      \textbf{类型}   & \textbf{用途} & \textbf{示例指令}              \\
+			      \midrule
+			      R型（寄存器-寄存器操作） & 算术和逻辑运算     & \texttt{add x1, x2, x3}    \\
+			      % \cmidrule{1-3}
+			      I型（立即数操作）     & 加载、立即数操作和跳转 & \texttt{addi x1, x2, 10}   \\
+			      % \cmidrule{1-3}
+			      S型（存储操作）      & 数据从寄存器存储到内存 & \texttt{sw x1, 12(x2)}     \\
+			      % \cmidrule{1-3}
+			      B型（条件分支）      & 条件分支跳转      & \texttt{beq x1, x2, label} \\
+			      % \cmidrule{1-3}
+			      U型（高位立即数操作）   & 加载高位立即数     & \texttt{lui x1, 0x12345}   \\
+			      % \cmidrule{1-3}
+			      J型（无条件跳转）     & 函数调用或长跳转    & \texttt{jal x1, label}     \\
+			      \bottomrule
+		      \end{tabularx}
+		      \label{tab:riscv_instruction_formats}
+	      \end{table}
 
-%绘制指令类型介绍
-\begin{table}[htbp]
-	\centering
-	\caption{RISC-V 指令格式介绍}
-	\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}X}
-		\toprule
-		\textbf{类型}   & \textbf{用途} & \textbf{示例指令}              \\
-		\midrule
-		R型（寄存器-寄存器操作） & 算术和逻辑运算     & \texttt{add x1, x2, x3}    \\
-		% \cmidrule{1-3}
-		I型（立即数操作）     & 加载、立即数操作和跳转 & \texttt{addi x1, x2, 10}   \\
-		% \cmidrule{1-3}
-		S型（存储操作）      & 数据从寄存器存储到内存 & \texttt{sw x1, 12(x2)}     \\
-		% \cmidrule{1-3}
-		B型（条件分支）      & 条件分支跳转      & \texttt{beq x1, x2, label} \\
-		% \cmidrule{1-3}
-		U型（高位立即数操作）   & 加载高位立即数     & \texttt{lui x1, 0x12345}   \\
-		% \cmidrule{1-3}
-		J型（无条件跳转）     & 函数调用或长跳转    & \texttt{jal x1, label}     \\
-		\bottomrule
-	\end{tabularx}
-	\label{tab:riscv_instruction_formats}
-\end{table}
+	\item 通用寄存器
 
+	      如图\ref{tab:riscv_instruction_register}表示，RISC-V有32个寄存器，特殊的是，x0寄存器硬连线为0,可替代约15\%的指令操作，而X86需要显式XOR清零。为了提升处理器的性能，数据应该尽量存储在寄存器中，但是频繁的恢复和保存寄存器需要不断地访问内存，会带来不小的开销。为了避免这种情况，RISC-V的处理方案是设置临时寄存器（t0-6）和保存寄存器（s0-11）。临时寄存器的值不需要保存至内存，而保存寄存器的值需要保存至内存。
 
+	      相比X86的16个寄存器，RISC-V架构的寄存器数量多一倍，适当地提升寄存器的数量，处理器可以充分地调度更多的寄存器，以至于加快程序编译和运行的速度。但是，寄存器并不是越多越好，由于其制造工艺和其特殊性导致了寄存器的成本昂贵，所以更多的寄存器会导致更高的成本和硬件复杂度，指令集也需要更多的比特位来对寄存器进行编码，一定程度上压缩了其余字段的编码空间，会提升编码和译码的复杂度。
+
+	      %绘制寄存器表格
+	      \begin{table}[htbp]
+		      \centering
+		      \caption{RISC-V 寄存器介绍}
+		      \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\centering\arraybackslash}X}
+			      \toprule
+			      \textbf{寄存器} & \textbf{名称} & \textbf{功能} \\
+			      \midrule
+			      x0           & zero        & 始终为0        \\
+			      x1           & ra          & 返回地址        \\
+			      x2           & sp          & 栈指针         \\
+			      x3           & gp          & 全局指针        \\
+			      x4           & tp          & 线程指针        \\
+			      x5           & t0          & 临时寄存器/链接寄存器 \\
+			      x6-7         & t1-2        & 临时寄存器       \\
+			      x8           & fp / s0     & 帧指针/保存寄存器   \\
+			      x9           & s1          & 保存寄存器       \\
+			      x10-11       & a0-1        & 函数参数/返回值    \\
+			      x12-17       & a2-7        & 函数参数        \\
+			      x18-27       & s2-11       & 保存寄存器       \\
+			      x28-31       & t3-6        & 临时寄存器       \\
+			      \bottomrule
+		      \end{tabularx}
+		      \label{tab:riscv_instruction_register}
+	      \end{table}
+
+	\item 指令集扩展
+
+	      RISC-V 指令集的另一个显著特点是模块化设计。RV32I 作为基础 ISA，虽然只定义了47条指令，但是足以支持运行基本的软件，其稳定性为开发者提供了可靠的指令集基础。模块化设计允许开发者根据具体需求选择特定的扩展，例如：
+	      \begin{enumerate}[]
+		      \item \textbf{RV32M}：支持乘除法扩展，从基本指令集分离出来的一个单独标准，需要设计对应的乘除法单元，适用于嵌入式系统、低功耗微控制器、高效处理整数运算的场景。
+		      \item \textbf{RV32A}：支持原子指令扩展，对共享内存的数据进行操作的一种方式，能够保证多线程并发执行的一致性，适用于多核处理器、操作系统内核、实时系统的场景。
+		      \item \textbf{RV32F}：支持单精度浮点扩展，新增了浮点寄存器，支持单精度浮点的传输、比较、转换、分类，适用于图形处理、传感器数据处理、轻量级机器学习推理的场景。
+		      \item \textbf{RV32D}：支持双精度浮点扩展，将浮点寄存器扩展至64位，新增了支持双精度浮点数相关的运算，适用于科学计算、高精度工程仿真、复杂模型训练的场景。
+	      \end{enumerate}
+
+	      这种灵活的扩展机制使得 RISC-V 能够适应从嵌入式系统到高性能计算的多样化应用场景，如：物联网设备只需 RV32M + RV32F，而科学计算需要 RV32F + RV32D。这种设计理念为芯片设计者、软件开发者和终端用户带来了多方面的好处。
+
+\end{enumerate}
 \section{RISC-V处理器相关技术}
+

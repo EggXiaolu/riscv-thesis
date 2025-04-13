@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2024/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2026/dev/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: bib/gbt7714-numerical.bst
@@ -7,45 +7,45 @@ Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Database file #1: bib/ref.bib
 Warning--empty author in JCDI202106005
 Warning--empty author and editor in 10.1145/3431920
-You've used 11 entries,
+You've used 13 entries,
             4281 wiz_defined-function locations,
-            965 strings with 8790 characters,
-and the built_in function-call counts, 55644 in all, are:
-= -- 1585
-> -- 5984
-< -- 7467
-+ -- 2362
-- -- 925
-* -- 444
-:= -- 8100
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 17
-chr.to.int$ -- 2107
-cite$ -- 15
-duplicate$ -- 201
-empty$ -- 582
-format.name$ -- 192
-if$ -- 14112
+            980 strings with 9041 characters,
+and the built_in function-call counts, 63197 in all, are:
+= -- 1775
+> -- 6797
+< -- 8501
++ -- 2673
+- -- 999
+* -- 503
+:= -- 9163
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 20
+chr.to.int$ -- 2378
+cite$ -- 17
+duplicate$ -- 237
+empty$ -- 693
+format.name$ -- 218
+if$ -- 16083
 int.to.chr$ -- 1
-int.to.str$ -- 12
+int.to.str$ -- 14
 missing$ -- 0
-newline$ -- 65
-num.names$ -- 27
-pop$ -- 1839
+newline$ -- 75
+num.names$ -- 33
+pop$ -- 2175
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 13
 quote$ -- 0
-skip$ -- 5716
+skip$ -- 6471
 stack$ -- 0
-substring$ -- 3221
-swap$ -- 30
-text.length$ -- 124
+substring$ -- 3593
+swap$ -- 35
+text.length$ -- 142
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 141
+type$ -- 165
 warning$ -- 2
-while$ -- 155
+while$ -- 179
 width$ -- 0
-write$ -- 162
+write$ -- 189
 (There were 2 warnings)
