@@ -1,0 +1,10 @@
+000101b0 <main>:
+	101b0: ff010113 addi	sp,sp,-16
+	101b4: 00112623 sw		ra,12(sp)
+	101b8: 00021537 lui 	a0,0x21
+	101bc: a1050513 addi 	a0,a0,-1520 # 20a10 <string1>
+	101c0: 288000ef jal 	ra,10450 <printf>
+	101c4: 00c12083 lw 		ra,12(sp)
+	101c8: 01010113 addi 	sp,sp,16
+	101cc: 00000513 li 		a0,0
+	101d0: 00008067 ret

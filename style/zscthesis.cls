@@ -364,7 +364,7 @@ zihao=-4,  % 默认字号为小4
 \RequirePackage[section]{placeins}
 
 % 表格宏包
-\RequirePackage{booktabs,tabularx,multirow,longtable,makecell}
+\RequirePackage{booktabs,tabularx,multirow,longtable,makecell,tabu}
 \RequirePackage{array}
 
 
@@ -461,6 +461,9 @@ zihao=-4,  % 默认字号为小4
 	
 % 源代码相关 ---------------------------------------
 \RequirePackage{style/zsccode}
+\usepackage{minted}
+\usepackage{tcolorbox}
+
 
 % 数学公式相关 ---------------------------------------
 \RequirePackage{amsmath}
@@ -774,3 +777,5 @@ zihao=-4,  % 默认字号为小4
 % hidelinks=true 取消链接的颜色和边框
 % bookmarksnumbered=true 书签带章节号
 \usepackage[hidelinks,bookmarksnumbered=true]{hyperref}
+
+\usepackage{svg}

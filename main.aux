@@ -8,7 +8,7 @@
 \citation{cocke1990evolution}
 \citation{waterman2011risc}
 \citation{asanovic2014instruction}
-\HyPL@Entry{4<</S/D>>}
+\HyPL@Entry{5<</S/D>>}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第1章\hspace  {.3em}}绪论}{1}{chapter.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}研究背景}{1}{section.1.1}\protected@file@percent }
 \citation{JJRB202112060060}
@@ -17,6 +17,7 @@
 \citation{JFYZ202303014}
 \citation{electronics13173494}
 \citation{10.1145/3431920}
+\citation{DZJY201906011}
 \citation{SDDZ202411008}
 \citation{JSGG202020007}
 \citation{JSGG202103009}
@@ -30,32 +31,68 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}本章小结}{4}{section.1.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {第2章\hspace  {.3em}}RISC-V处理器介绍}{6}{chapter.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}RISC-V处理器指令集}{6}{section.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2-1}{\ignorespaces RV32I 指令集格式}}{6}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:riscv_instruction_formats}{{2-1}{6}{RV32I 指令集格式}{figure.caption.6}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2-1}{\ignorespaces RISC-V 指令格式介绍}}{7}{table.caption.7}\protected@file@percent }
-\newlabel{tab:riscv_instruction_formats}{{2-1}{7}{RISC-V 指令格式介绍}{table.caption.7}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2-2}{\ignorespaces RISC-V 寄存器介绍}}{7}{table.caption.8}\protected@file@percent }
-\newlabel{tab:riscv_instruction_register}{{2-2}{7}{RISC-V 寄存器介绍}{table.caption.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}RISC-V处理器相关技术}{8}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {.3em}}RISC-V处理器设计}{9}{chapter.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}取指单元（IFU）}{9}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}译码单元（IDU）}{9}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}计算单元（EXU）}{9}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}访存单元（LSU）}{9}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}写回单元（WBU）}{9}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}异常处理}{9}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {.3em}}处理器相关技术设计}{10}{chapter.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}AXI4总线}{10}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}片上系统（SoC）}{10}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}系统优化}{10}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{10}{subsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{10}{subsection.4.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {.3em}}仿真测试}{11}{chapter.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}verilator仿真}{11}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}软硬件差分测试}{11}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {.3em}}总结和展望 }{12}{chapter.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}本文总结}{12}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}未来展望}{12}{section.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}指令集格式}{6}{subsection.2.1.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-1}{\ignorespaces RISC-V 指令格式介绍}}{6}{table.caption.7}\protected@file@percent }
+\newlabel{tab:riscv_instruction_formats}{{2-1}{6}{RISC-V 指令格式介绍}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}通用寄存器}{6}{subsection.2.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-1}{\ignorespaces RV32I 指令集格式}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:riscv_instruction_formats}{{2-1}{7}{RV32I 指令集格式}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}指令集扩展}{7}{subsection.2.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-2}{\ignorespaces RISC-V 寄存器介绍}}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tab:riscv_instruction_register}{{2-2}{8}{RISC-V 寄存器介绍}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}特权指令集}{8}{subsection.2.1.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-3}{\ignorespaces RISC-V 特权模式}}{8}{table.caption.9}\protected@file@percent }
+\newlabel{tab:riscv_csr_state}{{2-3}{8}{RISC-V 特权模式}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}RISC-V汇编}{9}{section.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-2}{\ignorespaces C源代码的翻译过程}}{9}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:compile}{{2-2}{9}{C源代码的翻译过程}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}编译器}{9}{subsection.2.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-4}{\ignorespaces ABI常见名称}}{10}{table.caption.11}\protected@file@percent }
+\newlabel{tab:riscv_abi_state}{{2-4}{10}{ABI常见名称}{table.caption.11}{}}
+\@writefile{lol}{\contentsline {lstlisting}{code/hello.c}{10}{lstlisting.2.-1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-3}{\ignorespaces C语言Hello World源代码（hello.c）}}{10}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:hello_c_example}{{2-3}{10}{C语言Hello World源代码（hello.c）}{figure.caption.12}{}}
+\@writefile{lol}{\contentsline {lstlisting}{code/hello.s}{10}{lstlisting.2.-2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-4}{\ignorespaces Hello world汇编程序（hello.s）}}{10}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:hello_s_example}{{2-4}{10}{Hello world汇编程序（hello.s）}{figure.caption.13}{}}
+\gdef \LT@i {\LT@entry 
+    {1}{154.26378pt}\LT@entry 
+    {1}{159.95424pt}\LT@entry 
+    {1}{154.26378pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}汇编器}{11}{subsection.2.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-5}{\ignorespaces 与零寄存器相关的RISC-V 伪指令（续）}}{11}{table.2.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2-5}{\ignorespaces 与零寄存器相关的RISC-V 伪指令（续）}}{12}{table.2.5}\protected@file@percent }
+\newlabel{tab:riscv_pseudoinstruction}{{2.2.2}{12}{汇编器}{table.2.5}{}}
+\@writefile{lol}{\contentsline {lstlisting}{code/hello.o}{12}{lstlisting.2.-3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-5}{\ignorespaces 机器语言的Hello world程序（hello.o）}}{12}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:hello_o_example}{{2-5}{12}{机器语言的Hello world程序（hello.o）}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}链接器}{12}{subsection.2.2.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{code/hello.out}{13}{lstlisting.2.-4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2-6}{\ignorespaces 链接后的Hello world程序（在Unix系统中改名为a.out）}}{13}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:hello_out_example}{{2-6}{13}{链接后的Hello world程序（在Unix系统中改名为a.out）}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}加载器}{13}{subsection.2.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}本章小结}{13}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {.3em}}RISC-V处理器设计}{15}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces 处理器整体架构图}}{15}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:cpu}{{3-1}{15}{处理器整体架构图}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}取指单元（IFU）}{16}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}译码单元（IDU）}{16}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}计算单元（EXU）}{16}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}访存单元（LSU）}{16}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}写回单元（WBU）}{16}{section.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}异常处理}{16}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {.3em}}处理器相关技术设计}{17}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}AXI4总线}{17}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}片上系统（SoC）}{17}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}系统优化}{17}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{17}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{17}{subsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {.3em}}仿真测试}{18}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}verilator仿真}{18}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}软硬件差分测试}{18}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {.3em}}总结和展望 }{19}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}本文总结}{19}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}未来展望}{19}{section.6.2}\protected@file@percent }
 \bibstyle{bib/gbt7714-numerical}
 \bibdata{bib/ref}
 \bibcite{faggin1996history}{{1}{1996}{{Faggin et~al.}}{{Faggin, Hoff, Mazor, and Shima}}}
@@ -68,9 +105,12 @@
 \bibcite{JFYZ202303014}{{8}{2023}{{王凯帆\ 等}}{{王凯帆, 徐易难, 余子濠, 唐丹, 陈国凯, 陈熙, 勾凌睿, 胡轩, 金越, 李乾若, 李昕, 蔺嘉炜, 刘彤, 刘志刚, 王华强, 王诲喆, 张传奇, 张发旺, 张林隽, 张紫飞, 张梓悦, 赵阳洋, 周耀阳, 邹江瑞, 蔡晔, 郇丹丹, 李祖松, 赵继业, 何伟, 孙凝晖, and 包云岗}}}
 \bibcite{electronics13173494}{{9}{2024}{{Daki\u 0107 et~al.}}{{Daki\u 0107, Mr\u 0161i\u 0107, Kuni\u 0107, and \u 0110ambi\u 0107}}}
 \bibcite{10.1145/3431920}{{10}{2021}{{10.}}{{}}}
-\bibcite{SDDZ202411008}{{11}{2024}{{钟戴元\ 等}}{{钟戴元, 曾庆立, 周佳凯, 薛浪, and 唐瑞东}}}
-\bibcite{JSGG202020007}{{12}{2020}{{郝振和\ 等}}{{郝振和, 焦继业, and 李雨倩}}}
-\bibcite{JSGG202103009}{{13}{2021}{{潘树朋\ 等}}{{潘树朋, 刘有耀, 焦继业, and 李昭}}}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{13}{section*.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{致谢}{14}{section*.11}\protected@file@percent }
-\gdef \@abspage@last{18}
+\bibcite{DZJY201906011}{{11}{2019}{{邓天传\ 等}}{{邓天传 and 胡振波}}}
+\bibcite{SDDZ202411008}{{12}{2024}{{钟戴元\ 等}}{{钟戴元, 曾庆立, 周佳凯, 薛浪, and 唐瑞东}}}
+\bibcite{JSGG202020007}{{13}{2020}{{郝振和\ 等}}{{郝振和, 焦继业, and 李雨倩}}}
+\bibcite{JSGG202103009}{{14}{2021}{{潘树朋\ 等}}{{潘树朋, 刘有耀, 焦继业, and 李昭}}}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{20}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{致谢}{21}{section*.19}\protected@file@percent }
+\xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
+\gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
+\gdef \@abspage@last{26}
