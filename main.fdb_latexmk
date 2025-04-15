@@ -1,18 +1,18 @@
 # Fdb version 4
-["bibtex main"] 1744637075.15662 "main.aux" "main.bbl" "main" 1744637078.58504 0
+["bibtex main"] 1744722202.66588 "main.aux" "main.bbl" "main" 1744722206.26626 0
   "./bib/gbt7714-numerical.bst" 1739831668 36981 b25ffc805a5a898668c326fb138db0d0 ""
   "./bib/ref.bib" 1744600859.23212 6376 c23efdfeaa76aadcac3ef7944265a09d ""
-  "main.aux" 1744637077.83469 11055 9e93104684b2ab461a38442be00d58b8 "xelatex"
+  "main.aux" 1744722205.52741 14776 417a7351c2bd7e512a8a941c3ec37497 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1744637078.15911 "main.xdv" "main.pdf" "main" 1744637078.59292 0
-  "main.xdv" 1744637077.83769 362392 eb49df63ffa8393a14cd1fd67a7216fd "xelatex"
+["xdvipdfmx"] 1744722205.84218 "main.xdv" "main.pdf" "main" 1744722206.27373 0
+  "main.xdv" 1744722205.53107 454060 f8d9cf5dc2458fc0ba2d939a2aba0cf6 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1744637075.25178 "/home/luyuxin/Documents/大学/毕设/论文/main.tex" "main.xdv" "main" 1744637078.58526 0
+["xelatex"] 1744722202.74271 "/home/luyuxin/Documents/大学/毕设/论文/main.tex" "main.xdv" "main" 1744722206.2665 0
   "/home/luyuxin/Documents/大学/毕设/论文/main.tex" 1739885179.46543 2036 b27ed9f8d912640bea73c02022d2e474 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1742685315 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -264,18 +264,23 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1743567544 4492513 2cfd4cc57d671747e5c0c56c4b8f01c4 ""
   "code/hello.c" 1744630888.54356 72 2b8332f25929d98fc041e8d454d59fd0 ""
-  "code/hello.o" 1744631459.9899 359 47eef109b8aa813de8f3ee4f43caad1d ""
+  "code/hello.o" 1744637393.4527 303 eb343c12dfc0087add9836d8c55040be ""
   "code/hello.out" 1744632990.62576 314 22b12e6c1e7da008cf6a53a14fd795f0 ""
   "code/hello.s" 1744631101.04014 795 831c22af3fbe2fe3b820a6c94ea183ba ""
+  "image/alu.pdf" 1744697090.03535 12162 f7fd25a20a2151395b08c9489d43bb34 ""
   "image/compile.pdf" 1744616129.69601 11560 9c8d5d2664795fa31e597a154e9f3952 ""
   "image/cpu.pdf" 1744635486.47154 22795 437fcbbec3a7d4dd74b16ea705f4a1b7 ""
+  "image/exu.pdf" 1744695329.67614 12722 1c14d22e85e63289b286850b473fbbb3 ""
+  "image/idu.pdf" 1744686066.88936 15032 cbc307295890cd251850c8d793b0f978 ""
+  "image/ifu.pdf" 1744686060.69222 11061 2c8666e07b0572e5f05d473797dca679 ""
+  "image/lsu.pdf" 1744718146.07387 9202 0e069e2f6e23a8bcbf21483d34d0fe21 ""
   "image/x86_growth.pdf" 1744616347.86995 12252 cddc3ed292117965d6e598e149a71a14 ""
   "logo/wzu.png" 1739867316.31182 55323 7d0900b732eb7979aae050a204ba3c4c ""
-  "main.aux" 1744637077.83469 11055 9e93104684b2ab461a38442be00d58b8 "xelatex"
-  "main.bbl" 1744637075.24085 4329 29d2ccafaf3a34aed1611c4fa6159e75 "bibtex main"
-  "main.out" 1744637077.83669 5103 235e35c8b3f30716ea33ae4f3286216f "xelatex"
+  "main.aux" 1744722205.52741 14776 417a7351c2bd7e512a8a941c3ec37497 "xelatex"
+  "main.bbl" 1744722202.73543 4329 29d2ccafaf3a34aed1611c4fa6159e75 "bibtex main"
+  "main.out" 1744722205.52941 5932 1edb7b2c8148f73059fbe489853ae8fd "xelatex"
   "main.tex" 1739885179.46543 2036 b27ed9f8d912640bea73c02022d2e474 ""
-  "main.toc" 1744637077.83764 3066 9583fd218c99aff646eaba3816ef9bd1 "xelatex"
+  "main.toc" 1744722205.53107 3628 054fe2818e2703e44fa0ebd67b77dc23 "xelatex"
   "style/zsccode.sty" 1739831668 8489 6ff1c0a60e11e024562b31ee43acd68c ""
   "style/zscexample.sty" 1739831668 1666 c3ca6d5d21468537aa235f63b0be9ac4 ""
   "style/zscthesis.cfg" 1744517652.0075 2621 637d8be1bde600822f76a4476c0e7a1d ""
@@ -285,9 +290,9 @@
   "tex/acknowledgement.tex" 1739887050.68018 794 1d70663861be84a04fa587514c654bb0 ""
   "tex/appendix.tex" 1739868130.49627 1216 05952c1a1c03eaecdd1fd544f40a57c4 ""
   "tex/chap-1.tex" 1744616460.21023 13394 17c3206b3e250f531ca288b8d985b489 ""
-  "tex/chap-2.tex" 1744634638.77286 21723 9ff11a2172a78ff2745c49e88c56e513 ""
-  "tex/chap-3.tex" 1744637071.67708 2705 5c423a49df52be978432f37564929d8b ""
-  "tex/chap-4.tex" 1739876956.17905 477 63144a9bdbd52c96f44831d483c525e1 ""
+  "tex/chap-2.tex" 1744695639.14085 21848 eaefa39d359f606a990625d5b1c0d643 ""
+  "tex/chap-3.tex" 1744722070.07312 18979 d3e8303c5ec035d57da282ed3a5bef2e ""
+  "tex/chap-4.tex" 1744722199.12345 527 3bb3fac40a077a4d63971b2b94d1eac7 ""
   "tex/chap-5.tex" 1739885139.13026 356 85deaedbfe45e941b1ae5f7d743061ff ""
   "tex/chap-6.tex" 1739877349.33904 531 9cc81884025302fc6838625ef19be8f2 ""
   "tex/content.tex" 1739860918.20009 1094 3a796a19b3958ab5d50fe358c48a65f0 ""

@@ -15,24 +15,31 @@
 \contentsline {subsection}{\numberline {2.2.3}链接器}{12}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}加载器}{13}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}本章小结}{13}{section.2.3}%
-\contentsline {chapter}{\numberline {第3章\hspace {.3em}}RISC-V处理器设计}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}取指单元（IFU）}{16}{section.3.1}%
+\contentsline {chapter}{\numberline {第3章\hspace {.3em}}RISC-V处理器设计}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}取指单元（IFU）}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}译码单元（IDU）}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}计算单元（EXU）}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}访存单元（LSU）}{16}{section.3.4}%
-\contentsline {section}{\numberline {3.5}写回单元（WBU）}{16}{section.3.5}%
-\contentsline {section}{\numberline {3.6}异常处理}{16}{section.3.6}%
-\contentsline {chapter}{\numberline {第4章\hspace {.3em}}处理器相关技术设计}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}AXI4总线}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}片上系统（SoC）}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}系统优化}{17}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{17}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{17}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {第5章\hspace {.3em}}仿真测试}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}verilator仿真}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}软硬件差分测试}{18}{section.5.2}%
-\contentsline {chapter}{\numberline {第6章\hspace {.3em}}总结和展望 }{19}{chapter.6}%
-\contentsline {section}{\numberline {6.1}本文总结}{19}{section.6.1}%
-\contentsline {section}{\numberline {6.2}未来展望}{19}{section.6.2}%
-\contentsline {chapter}{参考文献}{20}{section*.17}%
-\contentsline {chapter}{致谢}{21}{section*.19}%
+\contentsline {subsection}{\numberline {3.2.1}译码器}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}译码器}{16}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}执行单元（EXU）}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}加法器}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}比较器}{19}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}移位器}{19}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}访存单元（LSU）}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}写回单元（WBU）}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}本章小结}{22}{section.3.6}%
+\contentsline {chapter}{\numberline {第4章\hspace {.3em}}处理器相关技术设计}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}总线}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}内部总线}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}系统总线}{23}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}片上系统（SoC）}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}系统优化}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{23}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{23}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {第5章\hspace {.3em}}仿真测试}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1}verilator仿真}{24}{section.5.1}%
+\contentsline {section}{\numberline {5.2}软硬件差分测试}{24}{section.5.2}%
+\contentsline {chapter}{\numberline {第6章\hspace {.3em}}总结和展望 }{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}本文总结}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}未来展望}{25}{section.6.2}%
+\contentsline {chapter}{参考文献}{26}{section*.29}%
+\contentsline {chapter}{致谢}{27}{section*.31}%

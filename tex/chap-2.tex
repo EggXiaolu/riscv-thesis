@@ -17,7 +17,7 @@
 \subsection{指令集格式}
 
 RISC-V 基础指令集（Base ISA）作为 RISC-V 架构的核心，为处理器提供了基本的指令集框架。如表\ref{tab:riscv_instruction_formats}和图\ref{fig:riscv_instruction_formats}所示，RV32I 包含了六种基本指令类型：
-\begin{enumerate}[]
+\begin{enumerate}[label={\arabic*)},itemsep=0pt, parsep=0pt]
 	\item \textbf{R型}：两个操作数来自寄存器，用于寄存器间操作；
 	\item \textbf{I型}：两个操作数来自立即数和寄存器，用于实现立即数和取数操作；
 	\item \textbf{S型}：两个操作数来自寄存器，一个操作数来自立即数，用于实现访存操作；
@@ -128,7 +128,7 @@ RISC-V 基础指令集（Base ISA）作为 RISC-V 架构的核心，为处理器
 \subsection{指令集扩展}
 
 RISC-V 指令集的另一个显著特点是模块化设计。RV32I 作为基础 ISA，虽然只定义了47条指令，但是足以支持运行基本的软件，其稳定性为开发者提供了可靠的指令集基础。模块化设计允许开发者根据具体需求选择特定的扩展，例如：
-\begin{enumerate}[]
+\begin{enumerate}[label={\arabic*)},itemsep=0pt, parsep=0pt]
 	\item \textbf{RV32M}：支持乘除法扩展，从基本指令集分离出来的一个单独标准，需要设计对应的乘除法单元，适用于嵌入式系统、低功耗微控制器、高效处理整数运算的场景；
 	\item \textbf{RV32A}：支持原子指令扩展，对共享内存的数据进行操作的一种方式，能够保证多线程并发执行的一致性，适用于多核处理器、操作系统内核、实时系统的场景；
 	\item \textbf{RV32F}：支持单精度浮点扩展，新增了浮点寄存器，支持单精度浮点的传输、比较、转换、分类，适用于图形处理、传感器数据处理、轻量级机器学习推理的场景；
@@ -159,7 +159,7 @@ RISC-V 特权指令集（Privileged Instruction Set）定义了处理器在系�
 	\label{tab:riscv_csr_state}
 \end{table}
 
-\begin{enumerate}
+\begin{enumerate}[label={\arabic*)},itemsep=0pt, parsep=0pt]
 	\item \textbf{U模式}：用户模式是最低级的特权模式，只支持最低级别的权限操作，运行应用程序，禁止直接访问硬件或特权指令；
 	\item \textbf{S模式}：管理模式拥有次高特权级，可以操作计算机中的敏感资源，用于管理虚拟内存、进程调度和系统调用；
 	\item \textbf{H模式}：监视模式拥有比S模式更高的特权级，可以用于管理跨机器的资源，如管理多个虚拟机；

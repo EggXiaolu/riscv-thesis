@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.4.2)  14 APR 2025 21:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2026/dev/Arch Linux) (preloaded format=xelatex 2025.4.2)  15 APR 2025 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1801,34 +1801,60 @@ File: lstlang3.sty 2024/09/23 1.10c listings language file
 [12] (./code/hello.out)) (./tex/chap-3.tex
 
 [13]
-
-[14]
 第3章
 File: image/cpu.pdf Graphic file (type pdf)
 <use image/cpu.pdf>
 
 
-[15
+[14
 
-]) (./tex/chap-4.tex
+]
+File: image/ifu.pdf Graphic file (type pdf)
+<use image/ifu.pdf>
+
+
+[15]
+File: image/idu.pdf Graphic file (type pdf)
+<use image/idu.pdf>
+
 
 [16]
+
+[17]
+File: image/exu.pdf Graphic file (type pdf)
+<use image/exu.pdf>
+File: image/alu.pdf Graphic file (type pdf)
+<use image/alu.pdf>
+
+
+[18]
+
+[19]
+
+[20]
+File: image/lsu.pdf Graphic file (type pdf)
+<use image/lsu.pdf>
+
+
+[21]) (./tex/chap-4.tex
+
+[22]
 第4章
 ) (./tex/chap-5.tex
 
-[17
+[23
 
 ]
 第5章
 ) (./tex/chap-6.tex
 
-[18
+[24
 
 ]
 第6章
 ) (./tex/reference.tex
 
-[19
+[25
 
 ] (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 16--19
@@ -1890,16 +1916,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
 )) (./tex/acknowledgement.tex
 
-[20
+[26
 
 
 ]) (./tex/appendix.tex)
 
-[21
+[27
 
 
 ]
-runsystem(latexminted cleantemp  --timestamp 20250414212435 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20250415210322 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1911,15 +1937,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 235E35C8B3F30716EA33AE4F3286216F;5103.
+(rerunfilecheck)             Checksum: 1EDB7B2C8148F73059FBE489853AE8FD;5932.
  ) 
 Here is how much of TeX's memory you used:
- 43340 strings out of 475837
- 922153 string characters out of 5775515
- 1712666 words of memory out of 5000000
- 65454 multiletter control sequences out of 15000+600000
+ 43410 strings out of 475837
+ 923997 string characters out of 5775515
+ 1713362 words of memory out of 5000000
+ 65519 multiletter control sequences out of 15000+600000
  614390 words of font info for 177 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  117i,15n,131p,1203b,2179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (26 pages, 362392 bytes).
+Output written on main.xdv (32 pages, 454060 bytes).

@@ -72,27 +72,61 @@
 \newlabel{fig:hello_out_example}{{2-6}{13}{链接后的Hello world程序（在Unix系统中改名为a.out）}{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}加载器}{13}{subsection.2.2.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}本章小结}{13}{section.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {.3em}}RISC-V处理器设计}{15}{chapter.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces 处理器整体架构图}}{15}{figure.caption.16}\protected@file@percent }
-\newlabel{fig:cpu}{{3-1}{15}{处理器整体架构图}{figure.caption.16}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}取指单元（IFU）}{16}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第3章\hspace  {.3em}}RISC-V处理器设计}{14}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces 处理器整体架构图}}{14}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:cpu}{{3-1}{14}{处理器整体架构图}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}取指单元（IFU）}{15}{section.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-2}{\ignorespaces 取指单元设计图}}{15}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:ifu}{{3-2}{15}{取指单元设计图}{figure.caption.17}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}译码单元（IDU）}{16}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}计算单元（EXU）}{16}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}访存单元（LSU）}{16}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}写回单元（WBU）}{16}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}异常处理}{16}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {.3em}}处理器相关技术设计}{17}{chapter.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}AXI4总线}{17}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}片上系统（SoC）}{17}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}系统优化}{17}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{17}{subsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{17}{subsection.4.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {.3em}}仿真测试}{18}{chapter.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}verilator仿真}{18}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}软硬件差分测试}{18}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {.3em}}总结和展望 }{19}{chapter.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}本文总结}{19}{section.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}未来展望}{19}{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-3}{\ignorespaces 译码单元设计图}}{16}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:idu}{{3-3}{16}{译码单元设计图}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}译码器}{16}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}译码器}{16}{subsection.3.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3-1}{\ignorespaces 译码器接口描述表}}{17}{table.caption.19}\protected@file@percent }
+\newlabel{tab:decoder_interface}{{3-1}{17}{译码器接口描述表}{table.caption.19}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3-2}{\ignorespaces 控制信号单元接口描述表}}{17}{table.caption.20}\protected@file@percent }
+\newlabel{tab:csu_interface}{{3-2}{17}{控制信号单元接口描述表}{table.caption.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}执行单元（EXU）}{18}{section.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-4}{\ignorespaces 执行单元设计图}}{18}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:exu}{{3-4}{18}{执行单元设计图}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}加法器}{18}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-5}{\ignorespaces 加法器设计图}}{18}{figure.caption.22}\protected@file@percent }
+\newlabel{fig:alu}{{3-5}{18}{加法器设计图}{figure.caption.22}{}}
+\newlabel{eq:zf}{{3-1}{19}{加法器}{equation.3.1}{}}
+\newlabel{eq:cf}{{3-2}{19}{加法器}{equation.3.2}{}}
+\newlabel{eq:of}{{3-3}{19}{加法器}{equation.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3-3}{\ignorespaces ALU\_OPT接口描述表}}{19}{table.caption.23}\protected@file@percent }
+\newlabel{tab:alu_option}{{3-3}{19}{ALU\_OPT接口描述表}{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}比较器}{19}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}移位器}{19}{subsection.3.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3-4}{\ignorespaces CMP\_OPT接口描述表}}{20}{table.caption.24}\protected@file@percent }
+\newlabel{tab:cmp_option}{{3-4}{20}{CMP\_OPT接口描述表}{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3-5}{\ignorespaces SHIFTER\_OPT接口描述表}}{20}{table.caption.25}\protected@file@percent }
+\newlabel{tab:shifter_option}{{3-5}{20}{SHIFTER\_OPT接口描述表}{table.caption.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}访存单元（LSU）}{20}{section.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-6}{\ignorespaces 访存单元设计图}}{21}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:lsu}{{3-6}{21}{访存单元设计图}{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}写回单元（WBU）}{21}{section.3.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3-6}{\ignorespaces REG\_OPT接口描述表}}{21}{table.caption.27}\protected@file@percent }
+\newlabel{tab:reg_option}{{3-6}{21}{REG\_OPT接口描述表}{table.caption.27}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3-7}{\ignorespaces PC\_OPT接口描述表}}{22}{table.caption.28}\protected@file@percent }
+\newlabel{tab:pc_option}{{3-7}{22}{PC\_OPT接口描述表}{table.caption.28}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}本章小结}{22}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章\hspace  {.3em}}处理器相关技术设计}{23}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}总线}{23}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}内部总线}{23}{subsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}系统总线}{23}{subsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}片上系统（SoC）}{23}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}系统优化}{23}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}存储优化——高速缓存}{23}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}并行优化——流水线}{23}{subsection.4.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第5章\hspace  {.3em}}仿真测试}{24}{chapter.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}verilator仿真}{24}{section.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}软硬件差分测试}{24}{section.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第6章\hspace  {.3em}}总结和展望 }{25}{chapter.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}本文总结}{25}{section.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}未来展望}{25}{section.6.2}\protected@file@percent }
 \bibstyle{bib/gbt7714-numerical}
 \bibdata{bib/ref}
 \bibcite{faggin1996history}{{1}{1996}{{Faggin et~al.}}{{Faggin, Hoff, Mazor, and Shima}}}
@@ -109,8 +143,8 @@
 \bibcite{SDDZ202411008}{{12}{2024}{{钟戴元\ 等}}{{钟戴元, 曾庆立, 周佳凯, 薛浪, and 唐瑞东}}}
 \bibcite{JSGG202020007}{{13}{2020}{{郝振和\ 等}}{{郝振和, 焦继业, and 李雨倩}}}
 \bibcite{JSGG202103009}{{14}{2021}{{潘树朋\ 等}}{{潘树朋, 刘有耀, 焦继业, and 李昭}}}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{20}{section*.17}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{致谢}{21}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{参考文献}{26}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{致谢}{27}{section*.31}\protected@file@percent }
 \xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
-\gdef \@abspage@last{26}
+\gdef \@abspage@last{32}
