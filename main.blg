@@ -7,45 +7,45 @@ Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
 Database file #1: bib/ref.bib
 Warning--empty author in JCDI202106005
 Warning--empty author and editor in 10.1145/3431920
-You've used 14 entries,
+You've used 16 entries,
             4281 wiz_defined-function locations,
-            988 strings with 9198 characters,
-and the built_in function-call counts, 65922 in all, are:
-= -- 1949
-> -- 6963
-< -- 8736
-+ -- 2774
-- -- 1047
-* -- 572
-:= -- 9604
-add.period$ -- 43
-call.type$ -- 14
-change.case$ -- 21
-chr.to.int$ -- 2462
-cite$ -- 18
-duplicate$ -- 256
-empty$ -- 813
-format.name$ -- 228
-if$ -- 16759
+            1001 strings with 9653 characters,
+and the built_in function-call counts, 80280 in all, are:
+= -- 2197
+> -- 8680
+< -- 10856
++ -- 3347
+- -- 1167
+* -- 645
+:= -- 11566
+add.period$ -- 49
+call.type$ -- 16
+change.case$ -- 25
+chr.to.int$ -- 2987
+cite$ -- 20
+duplicate$ -- 295
+empty$ -- 926
+format.name$ -- 263
+if$ -- 20495
 int.to.chr$ -- 1
-int.to.str$ -- 15
+int.to.str$ -- 17
 missing$ -- 0
-newline$ -- 81
-num.names$ -- 36
-pop$ -- 2189
+newline$ -- 92
+num.names$ -- 42
+pop$ -- 2915
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 16
 quote$ -- 0
-skip$ -- 6720
+skip$ -- 8270
 stack$ -- 0
-substring$ -- 3841
-swap$ -- 37
-text.length$ -- 150
+substring$ -- 4518
+swap$ -- 42
+text.length$ -- 172
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 178
+type$ -- 202
 warning$ -- 2
-while$ -- 192
+while$ -- 221
 width$ -- 0
-write$ -- 206
+write$ -- 235
 (There were 2 warnings)

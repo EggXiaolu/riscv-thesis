@@ -1,12 +1,12 @@
 INFO:  latexindent version 3.24.4, 2024-07-18, a script to indent .tex files
        latexindent lives here: /usr/share/texmf-dist/scripts/latexindent/
-       Wed Apr 16 22:33:14 2025
-       Filename: /home/luyuxin/Documents/大学/毕设/论文/tex/__latexindent_temp_content.tex
+       Wed Apr 16 22:02:29 2025
+       Filename: /home/luyuxin/Documents/大学/毕设/论文/__latexindent_temp_pipeline_timeline.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
-INFO:  Directory for backup files and log file /home/luyuxin/Documents/大学/毕设/论文/indent.log:
-       /home/luyuxin/Documents/大学/毕设/论文/
+INFO:  Directory for backup files and log file /home/luyuxin/Documents/大学/毕设/论文/image/indent.log:
+       /home/luyuxin/Documents/大学/毕设/论文/image/
 INFO:  YAML settings read: defaultSettings.yaml
        Reading defaultSettings.yaml from /usr/share/texmf-dist/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML reading settings

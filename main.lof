@@ -1,0 +1,25 @@
+\contentsline {figure}{\numberline {1-1}{\ignorespaces x86指令集发展历程（1978-2014）}}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {2-1}{\ignorespaces RV32I 指令集格式}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {2-2}{\ignorespaces C源代码的翻译过程}}{9}{figure.caption.12}%
+\contentsline {figure}{\numberline {2-3}{\ignorespaces C语言Hello World源代码（hello.c）}}{10}{figure.caption.14}%
+\contentsline {figure}{\numberline {2-4}{\ignorespaces Hello world汇编程序（hello.s）}}{10}{figure.caption.15}%
+\contentsline {figure}{\numberline {2-5}{\ignorespaces 机器语言的Hello world程序（hello.o）}}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2-6}{\ignorespaces 链接后的Hello world程序（在Unix系统中改名为a.out）}}{13}{figure.caption.17}%
+\contentsline {figure}{\numberline {3-1}{\ignorespaces 处理器整体架构图}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces 取指单元设计图}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces 译码单元设计图}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces 执行单元设计图}}{19}{figure.caption.23}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces 加法器设计图}}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {3-6}{\ignorespaces 访存单元设计图}}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 模块间通信的握手协议}}{24}{figure.caption.31}%
+\contentsline {figure}{\numberline {4-2}{\ignorespaces master的有限状态自动机设计}}{25}{figure.caption.32}%
+\contentsline {figure}{\numberline {4-3}{\ignorespaces 多周期处理器结构图}}{25}{figure.caption.33}%
+\contentsline {figure}{\numberline {4-4}{\ignorespaces 集中控制处理器结构图}}{26}{figure.caption.34}%
+\contentsline {figure}{\numberline {4-5}{\ignorespaces 不同情况下的握手时序图}}{28}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ready和valid同时到达}}}{28}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {valid比ready先到达}}}{28}{figure.caption.40}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {ready比valid先到达}}}{28}{figure.caption.40}%
+\contentsline {figure}{\numberline {4-6}{\ignorespaces 加入总线后的处理器结构图}}{29}{figure.caption.41}%
+\contentsline {figure}{\numberline {4-7}{\ignorespaces 加入cache后的处理器结构图}}{30}{figure.caption.43}%
+\contentsline {figure}{\numberline {4-8}{\ignorespaces 指令流水线时空图}}{32}{figure.caption.44}%
+\contentsline {figure}{\numberline {4-9}{\ignorespaces 加入流水线技术后的处理器结构图}}{32}{figure.caption.45}%

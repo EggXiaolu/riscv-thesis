@@ -276,8 +276,9 @@ RISC-V 特权指令集（Privileged Instruction Set）定义了处理器在系�
 	\midrule
 	frflags rd      & csrrs rd, fflags, x0              & 读异常标志       \\
 	fsflags rs      & csrrw x0, fflags, rs              & 写异常标志       \\
+	\label{tab:riscv_pseudoinstruction}
 \end{longtable}
-\label{tab:riscv_pseudoinstruction}
+
 
 将Hello Word汇编程序通过汇编器译器翻译后，得到机器语言的Hello World程序\ref{fig:hello_o_example}。
 

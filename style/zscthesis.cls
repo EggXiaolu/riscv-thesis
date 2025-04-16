@@ -348,12 +348,16 @@ zihao=-4,  % 默认字号为小4
 \graphicspath{{img/}}
 
 % 绘图
-% \RequirePackage{tikz}
+\RequirePackage{tikz}
 % \usetikzlibrary{3d}
 % \usetikzlibrary{graphs}
 % \usegdlibrary{trees}
 \usepackage{bytefield}
 \usepackage{adjustbox}
+\usepackage{subfigure}
+\usepackage{nicematrix}
+
+\usetikzlibrary{shapes, arrows, positioning, calc, matrix}
 
 
 
@@ -554,6 +558,9 @@ zihao=-4,  % 默认字号为小4
 % 教学单位 指导单位
 \def\definstitute{}
 \newcommand{\institute}[1]{\def\definstitute{#1}}
+% 班级
+\def\defclass{}
+\newcommand{\class}[1]{\def\defclass{#1}}
 % 学生专业
 \def\defmajor{}
 \newcommand{\major}[1]{\def\defmajor{#1}}
@@ -611,6 +618,9 @@ zihao=-4,  % 默认字号为小4
 
                     % 教学单位 institute
                     \deflabeleduinstitute & \definstitute\\
+
+                     % 班级
+                    \deflabelclass & \defclass\\
 
                     % 专业名称 major
                     \deflabelmajor & \defmajor\\

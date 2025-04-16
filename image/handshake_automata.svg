@@ -1,0 +1,46 @@
+<svg width="664" height="557" viewBox="0 0 503.25 417.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(127.68000030517578,280.20999908447266) scale(1)">
+<title>finite_state_machine</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-146.67 251.89,-146.67 251.89,4 -4,4"/>
+<!-- state=00 -->
+<g id="node1" class="node">
+<title>idle</title>
+<ellipse fill="none" stroke="black" cx="25.52" cy="-53.94" rx="25.52" ry="25.52"/>
+<text text-anchor="middle" x="25.52" y="-49.74" font-family="Helvetica,Arial,sans-serif" font-size="14.00">idle</text>
+</g>
+<!-- state=00&#45;&gt;state=00 -->
+<g id="edge3" class="edge">
+<title>idle-&gt;idle</title>
+<path fill="none" stroke="black" d="M12.78,-76.33C11.02,-87.49 15.26,-97.45 25.52,-97.45 32.09,-97.45 36.19,-93.37 37.83,-87.49"/>
+<polygon fill="black" stroke="black" points="41.31,-87.97 38.2,-77.84 34.32,-87.7 41.31,-87.97"/>
+<text text-anchor="middle" x="25.52" y="-101.65" font-family="Helvetica,Arial,sans-serif" font-size="14.00">valid = 0</text>
+</g>
+<!-- state=01 -->
+<g id="node2" class="node">
+<title>wait_ready</title>
+<ellipse fill="none" stroke="black" cx="193.96" cy="-53.94" rx="53.94" ry="53.94"/>
+<text text-anchor="middle" x="193.96" y="-49.74" font-family="Helvetica,Arial,sans-serif" font-size="14.00">wait_ready</text>
+</g>
+<!-- state=00&#45;&gt;state=01 -->
+<g id="edge1" class="edge">
+<title>idle-&gt;wait_ready</title>
+<path fill="none" stroke="black" d="M51.43,-53.94C71.75,-53.94 101.38,-53.94 128.28,-53.94"/>
+<polygon fill="black" stroke="black" points="128.09,-57.44 138.09,-53.94 128.09,-50.44 128.09,-57.44"/>
+<text text-anchor="middle" x="95.53" y="-58.14" font-family="Helvetica,Arial,sans-serif" font-size="14.00">valid = 1</text>
+</g>
+<!-- state=01&#45;&gt;state=01 -->
+<g id="edge2" class="edge">
+<title>wait_ready-&gt;idle</title>
+<path fill="none" stroke="black" d="M142.63,-36.51C120.01,-30.98 93.05,-27.58 69.03,-33.14 65.43,-33.97 61.78,-35.15 58.21,-36.54"/>
+<polygon fill="black" stroke="black" points="56.97,-33.26 49.26,-40.53 59.82,-39.66 56.97,-33.26"/>
+<text text-anchor="middle" x="95.53" y="-37.34" font-family="Helvetica,Arial,sans-serif" font-size="14.00">ready = 1</text>
+</g>
+<!-- state=10 -->
+<g id="edge4" class="edge">
+<title>wait_ready-&gt;wait_ready</title>
+<path fill="none" stroke="black" d="M175.87,-105.02C177.35,-117.02 183.38,-125.87 193.96,-125.87 200.89,-125.87 205.88,-122.06 208.9,-116.05"/>
+<polygon fill="black" stroke="black" points="212.26,-117.05 211.63,-106.47 205.52,-115.13 212.26,-117.05"/>
+<text text-anchor="middle" x="193.96" y="-130.07" font-family="Helvetica,Arial,sans-serif" font-size="14.00">ready = 0</text>
+</g>
+</g>
+</svg>
